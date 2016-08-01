@@ -869,13 +869,13 @@ html, body: {
       padding-left: 0; }
   #interest .card .box {
     /*fixing the height for icons*/
-    height: 105px; }
+    height: 110px; }
     #interest .card .box .interest-icon {
       /*interest icon*/
       display: block;
       color: #fff;
       background: #06A763;
-      height: 105px; }
+      height: 110px; }
       #interest .card .box .interest-icon i {
         /*icon*/
         font-size: 2.5em;
@@ -887,7 +887,7 @@ html, body: {
       /*interest icon even*/
       display: block;
       color: #06A763;
-      height: 105px;
+      height: 110px;
       margin-right: -1px; }
       #interest .card .box .interest-icon-even i {
         /*icon*/
