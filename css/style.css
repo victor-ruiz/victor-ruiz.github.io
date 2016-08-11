@@ -143,8 +143,9 @@ html, body: {
   display: block;
   width: 100%;
   height: 300px;
-/*  background: url("images/blog-1.png") no-repeat; 
-*/ background-size: cover;
+/*  background: url("images/blog-1.png") no-repeat; */
+  background-image:  "images/blog-1.png";
+  background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
   #home .header-background #v-card-holder {
