@@ -9,15 +9,10 @@
 /*home section*/
 #home .header-background {
   /*home background*/
-  /*position: relative;*/
-  /*display: block;*/
+  
   width: 100%;
   height: 300px;
-  /*background: "images/blog-1.png" no-repeat;*
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; 
-  */
+  
 }
 #home .header-background #v-card-holder {
     /*card holder*/
