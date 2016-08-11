@@ -1,6 +1,7 @@
 
 
 
+
 /*
 -------------------------------------------------------------------------------
 3. HEADER
@@ -9,9 +10,14 @@
 /*home section*/
 #home .header-background {
   /*home background*/
-  
+  position: relative;
+  display: block;
   width: 100%;
   height: 300px;
+  background: "images/blog-1.png" no-repeat;*
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
   
 }
 #home .header-background #v-card-holder {
@@ -187,9 +193,10 @@
       display: table;
       max-width: 100%;
       padding: 0;
-      margin: 0 auto 9px;
-    }
-      
+      margin: 0 auto 9px; }
+      /*#home .header-background #v-card-holder #v-card .links #first_one {
+        /*first link at max width 767*
+        margin-left: 0; }*/
 
     #home .header-background #v-card-holder #v-card .info-headings {
       /*heading at max width 767*/
@@ -235,7 +242,7 @@
 
 /*
 -------------------------------------------------------------------------------
-#TIMELINE SECTION para 5.educacion AND 7.experiencia (EXTENDS)
+#TIMELINE SECTION BOTH 5.EDUCATION AND 7.EXPERIENCE EXTENDS FROM IT
 -------------------------------------------------------------------------------
 */
 #timeline-education {
@@ -253,7 +260,7 @@
     top: 0;
     bottom: 23px;
     left: 50%;
-    height: 99.5%;
+    height: 99%;
     width: 4px;
     opacity: 0.3;
     background: #06A763; }
@@ -268,7 +275,7 @@
     top: 0;
     bottom: 23px;
     left: 50%;
-    height: 99.5%;
+    height: 100%;
     width: 4px;
     opacity: 0.3;
     background: #06A763; }
@@ -293,7 +300,7 @@
     padding: 20px; }
     .timeline-block .card-content p {
       /*paragraph*/
-      margin-top: 13px;
+      margin-top: 10px;
       text-align: left; }
     
   .timeline-block .timeline-dot {
@@ -302,6 +309,7 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     z-index: 2;
     color: #fff;
     text-align: center;
@@ -315,8 +323,7 @@
       font-size: 30px;
       font-weight: bold;
       margin-top: 8px;
-      
-    }
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); }
   .timeline-block .timeline-content {
     /*each timeline content*/
     position: relative;
@@ -326,9 +333,9 @@
     margin-bottom: 5px;
     border-left: 5px solid #1976D2; }
     .timeline-block .timeline-content::before {
-      /*horizontal line*/
+      /*horizontal line antes de.... */
       content: '';
-      width: 58px;
+      width: 50px;
       height: 4px;
       position: absolute;
       top: 26px;
@@ -337,8 +344,9 @@
       opacity: 0.4;
       background: #06A763; }
     .timeline-block .timeline-content::after {
-      /*horizontal line*/
-      clear: both;
+      /*horizontal line despues de */
+      clear: both;/*hace que la caja baje hasta que su borde superior este por debajo del 
+      borde inferior */
       content: "";
       display: table; }
     .timeline-block .timeline-content .timeline-title {
@@ -368,7 +376,7 @@
     /*vertical line for education in in min width 768 */
     left: 50%;
     margin-left: -2px;
-    height: 77.1%;
+    height: 80%;
     opacity: 0.4;
     background: #06A763; }
 
@@ -376,7 +384,7 @@
     /*vertical line for experience in min width 768 */
     left: 50%;
     margin-left: -2px;
-    height: 69.1%;
+    height: 70%;
     opacity: 0.4;
     background: #06A763; }
 
@@ -393,8 +401,8 @@
       top: 0;
       z-index: 2;
       margin-left: -24px;
-      
-    }
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden; }
     .timeline-block .timeline-content {
       /*timeline content in min width 768*/
       width: 44%; }
@@ -411,3 +419,60 @@
       right: 101.2%;
       z-index: -2; } 
 }
+
+/*
+-------------------------------------------------------------------------------
+6. SKILLS SECTION
+-------------------------------------------------------------------------------
+*/
+/*skills section*/
+#skills .card {
+  background: #06A763;
+  /*skills title*/ }
+  #skills .card .skills-title {
+    /*skills title*/
+    margin: 15px 0; }
+    #skills .card .skills-title h6 {
+      /*title style*/
+      color: #fff;
+      /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); */
+    }
+  #skills .card .skillbar {
+    /*whole bar*/
+    position: relative;
+    display: block;
+    margin-bottom: 17px;
+    margin-top: 45px;
+    width: 100%;
+    padding: 0 0;
+    background: #046c40;
+    height: 4px;
+    
+  }
+    #skills .card .skillbar .skillbar-title {
+      /*skill bar title*/
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1em; }
+      #skills .card .skillbar .skillbar-title span {
+        /*title*/
+        display: block;
+        padding: 3px 0;
+        margin-top: -25px;
+        line-height: 15px;
+        color: #fff; }
+    #skills .card .skillbar .skillbar-bar {
+      /*skill bar*/
+      height: 4px;
+      width: 0;
+      background: #fff;
+      overflow: hidden; }
+    #skills .card .skillbar .skill-bar-percent {
+      /*skill percentage text*/
+      position: absolute;
+      right: 1px;
+      top: -20px;
+      font-size: .8em;
+      line-height: 15px;
+      color: #fff; }
