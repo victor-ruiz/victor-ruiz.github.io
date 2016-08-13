@@ -1,5 +1,6 @@
 /*
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 TABLE OF CONTENT
 -------------------------------------------------------------------------------
 */
@@ -127,6 +128,8 @@ VERSION:	2.0
 -------------------------------------------------------------------*/
 /*
 -------------------------------------------------------------------------------
+=======
+>>>>>>> 5ee4c05688a58c20dd2d862857bbf69ae7031bd7
 1. HTML, BODY, SECTION, CONTAINER, CARD
 -------------------------------------------------------------------------------
 */
@@ -270,8 +273,14 @@ html, body: {
   display: block;
   width: 100%;
   height: 300px;
+<<<<<<< HEAD
 /*  background: url("images/blog-1.png") no-repeat; 
 */ background-size: cover;
+=======
+/*  background: url("images/blog-1.png") no-repeat; */
+  background-image:  "images/blog-1.png";
+  background-size: cover;
+>>>>>>> 5ee4c05688a58c20dd2d862857bbf69ae7031bd7
   background-position: center center;
   background-attachment: fixed; }
   #home .header-background #v-card-holder {
@@ -996,16 +1005,27 @@ html, body: {
       padding-left: 0; }
   #interest .card .box {
     /*fixing the height for icons*/
+<<<<<<< HEAD
     height: 105px; }
+=======
+    height: 110px; }
+>>>>>>> 5ee4c05688a58c20dd2d862857bbf69ae7031bd7
     #interest .card .box .interest-icon {
       /*interest icon*/
       display: block;
       color: #fff;
       background: #06A763;
+<<<<<<< HEAD
       height: 105px; }
       #interest .card .box .interest-icon i {
         /*icon*/
         font-size: 2.2em;
+=======
+      height: 110px; }
+      #interest .card .box .interest-icon i {
+        /*icon*/
+        font-size: 2.5em;
+>>>>>>> 5ee4c05688a58c20dd2d862857bbf69ae7031bd7
         margin-top: 29px; }
       #interest .card .box .interest-icon span {
         /*icon name*/
@@ -1014,7 +1034,11 @@ html, body: {
       /*interest icon even*/
       display: block;
       color: #06A763;
+<<<<<<< HEAD
       height: 105px;
+=======
+      height: 110px;
+>>>>>>> 5ee4c05688a58c20dd2d862857bbf69ae7031bd7
       margin-right: -1px; }
       #interest .card .box .interest-icon-even i {
         /*icon*/
