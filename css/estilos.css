@@ -1,7 +1,4 @@
 
-
-
-
 /*
 -------------------------------------------------------------------------------
 3. HEADER
@@ -14,9 +11,12 @@
   display: block;
   width: 100%;
   height: 300px;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; 
+  /*background-color: '#1976D2';*/
+  /*background-image: url('/images/blog-2.png');*/
+  /*background-size: cover;*/
+  /*background-position: center center;*/
+  /*background-attachment: fixed; */
+
   
 }
 #home .header-background #v-card-holder {
@@ -26,6 +26,7 @@
     width: 100%;
     height: auto;
     top: 100px; 
+    border-color: #0000ff;
 }
     #home .header-background #v-card-holder #v-card {
       /*v-card with fixed 400px height*/
@@ -35,7 +36,9 @@
       overflow: hidden;
       z-index: 1;
       background: #06A763;
-      margin: -20px 3px 0 0; }
+      margin: -20px 3px 0 0;
+      border-color: #0000ff;
+       }
       #home .header-background #v-card-holder #v-card .info-headings {
         /*basic infos*/
         max-width: 514px; }
@@ -94,7 +97,9 @@
         #home .header-background #v-card-holder #v-card #profile img {
           /*user image for 400x400px image*/
           width: 400px;
-          height: auto; }
+          height: auto;
+          z-index: 10;
+           }
         #home .header-background #v-card-holder #v-card #profile .slant {
           /*slant*/
           /*permite que un elemento se desplace respecto al origen de coordenadas del 
@@ -110,7 +115,7 @@
           border-width: 400px 0 0 100px;
           /*el primero es el borde superior, el segundo es el borde derecho, 
           el tercero es el borde inferior y el cuarto es el borde izquierdo,*/
-          border-color: transparent transparent transparent #06A763; }
+          border-color: transparent transparent transparent #06A763;*/ }
 
         
         #home .header-background #v-card-holder #v-card #profile .add-btn {
@@ -230,6 +235,7 @@
 
 
 
+
 /*
 -------------------------------------------------------------------------------
 #TIMELINE SECTION BOTH 5.EDUCATION AND 7.EXPERIENCE EXTENDS FROM IT
@@ -279,7 +285,8 @@
     content: "";
     display: table; }
     /*
-    La pseudo-clase :first-child selecciona el primer elemento hijo de un elemento. 
+    La pseudo-clase 
+    :first-child selecciona el primer elemento hijo de un elemento. 
     */
   .timeline-block:first-child {
     margin-top: 0; }
@@ -299,7 +306,7 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
-/*    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+/*  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 */  z-index: 2;
     color: #fff;
     text-align: center;
@@ -344,7 +351,8 @@
       background: #06A763; }
     .timeline-block .timeline-content::after {
       /*horizontal line despues de */
-      clear: both;/*hace que la caja baje hasta que su borde superior este por debajo del 
+      clear: both;/*hace que la caja 
+      baje hasta que su borde superior este por debajo del 
       borde inferior */
       content: "";
       display: table; }
@@ -361,6 +369,7 @@
           /*time*/
           color: inherit; }
 
+/*se va a dar despues*/
 /* Móviles en horizontal o tablets en vertical*/
   @media screen and (max-width: 768px) {
     .timeline-block .timeline-content:before {
@@ -378,7 +387,7 @@
     height: 80%;
     opacity: 0.4;
     background: #06A763; }
-
+/*falta por agregar al sass*/
   #timeline-experience::before {
     /*vertical line for experience in min width 768 */
     left: 50%;
@@ -490,23 +499,7 @@
     border-bottom: 0;
     text-align: center;
     margin-bottom: 10px; }
-    /*#portfolios #portfolios-card .nav-tabs li {
-      /*option list*
-      float: none;
-      margin: 0;
-      position: relative;
-      display: inline-block; }
-      #portfolios #portfolios-card .nav-tabs li a {
-        /*links for options*
-        margin-right: 0;
-        border: 0;
-        color: #555555; }
-  #portfolios #portfolios-card .nav-tabs > li.active > a, #portfolios #portfolios-card .nav-tabs > li.active > a:hover, #portfolios #portfolios-card .nav-tabs > li.active > a:focus {
-    /*tabs style bootstrap*
-    border: 0;
-    border-bottom: 5px solid #1976D2;
-    background-color: transparent;
-    /* outline: 0;* }*/
+  
   #portfolios #portfolios-card .tab-content {
     /*portfolios content*/
     margin: 0 10px; }
@@ -637,7 +630,11 @@
           -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
           transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
         }
-
+      
+      #portfolios .btn-large {
+  color: #1976D2 !important;
+  background: #f5f5f5 !important;
+  margin-bottom: 10px !important; }
 
 
 /*
